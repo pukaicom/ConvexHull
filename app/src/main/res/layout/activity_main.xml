@@ -1,0 +1,98 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+        "
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="输入点数:" />
+
+        <EditText
+            android:id="@+id/dotsNum"
+            android:layout_width="300px"
+            android:layout_height="wrap_content"
+            android:textColor="#ff2a00"
+            android:layout_weight="1"
+            android:numeric="integer"
+            android:ems="10" >
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/creatDots"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="生成点" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="运行时间:" />
+
+        <TextView
+            android:id="@+id/runningTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:textColor="#329E1C"
+            android:text="0" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="ms" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/draw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="800"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/function"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/enumAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="枚举法" />
+
+        <Button
+            android:id="@+id/grahamScan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="GrahamScan" />
+
+        <Button
+            android:id="@+id/Devided"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="分治法" />
+    </LinearLayout>
+
+</LinearLayout>
